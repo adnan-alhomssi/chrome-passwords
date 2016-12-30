@@ -16,11 +16,12 @@ for more details: a good answer on Stackoverflow http://security.stackexchange.c
 
 
 ## Implementation
-Application is compiled using Visual Studio C++ 2015 , target SDK 8.1 & OS: Win 7
+Application is compiled using Visual Studio C++ 2015 toolkit; target SDK 8.1 & OS: Win 7
 
 Dependecies:
-* SQLLite3 , I embeded the augmented version sqlite3.c and sqlite3.h 
-* Microsoft Cryptography API. Cryptlib32.lib ( You can get by installing Windows SDK) . I prefer static linking for dependecies and CRT in such tiny app.
+* SQLLite3 : The amalgamation version : sqlite3.c and sqlite3.h 
+* Microsoft Cryptography API. Cryptlib32.lib ( You can get by installing Windows SDK if visual studio does not already have it).
+ I prefer static linking for dependecies and CRT in such tiny app.
 
 ## Contributing
 This is a fairly simple show case for a possibility of exploiting the ecnrypting mechanisim. 
