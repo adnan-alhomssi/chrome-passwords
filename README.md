@@ -1,6 +1,6 @@
 # chrome-passwords
 
-Extract (Recover) locally saved passwords on Google Chrome and decrypt them.
+Extract (Recover) locally saved passwords and cookies (with -p ) on Google Chrome and decrypt them.
 C/C++ Implementation.
 
 ## How it works ?
@@ -14,6 +14,12 @@ just run my implementation and you will get list of everything you stored withou
 Note: this comes after Google was using Plain text to store our passwords :-)
 for more details: a good answer on Stackoverflow http://security.stackexchange.com/a/40887
 
+Same applies for cookies
+## How to use ?
+* without any argument to display saved passwords as following : url \n username \n password 
+* -p to disable waiting for random input at the end
+(useful if you want to forward to the output to a file like chrome-passwords.exe -p > output)
+* -c to show also cookies as following: host_key \n path \n cookie value
 
 ## Implementation
 Application is compiled using Visual Studio C++ 2015 toolkit; target SDK 8.1 & OS: Win 7
